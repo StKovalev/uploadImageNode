@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Загруженные файлы</h1>
+
+    <% items.forEach(function(image) {%>
+        <div>
+            <img 
+                src="data:image/<%=image.image.contentType%>;base64,
+                <%=image.image.data.toString('base64')%>"
+            />
+            <p><%= image.nameFile %></p>
+            <p><%= image.description %></p>
+            
+            <hr />
+        </div>
+    <% }) %>    
+</body>
+</html>

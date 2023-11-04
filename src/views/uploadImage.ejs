@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image</title>
+</head>
+<body>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <div>
+            <p>nameFile</p>
+            <input 
+                type="text"
+                name="nameFile"
+                id="nameFile"
+                value=""
+                required
+            />
+        </div>
+        <div>
+            <p>description</p>
+            <input 
+                type="text"
+                name="description"
+                id="description"
+                value=""
+                required
+            />
+        </div>
+        <div>
+            <p>file</p>
+            <input
+                type="file"
+                name="image"
+                value=""
+                required
+            />
+        </div>
+        <div>
+            <button type="submit">Загрузить...</button>
+        </div>
+    </form>
+</body>
+</html>
